@@ -1,6 +1,21 @@
 ﻿# lab04
 BCD2SSeg
 
+INTEGRANTES:
+
+Arley Stiven Rodriguez 
+
+Cesar Eduardo Martinez 
+
+Juan Arevalo  
+
+
+Laboratorio #4 
+
+Implemetacion BCD en display 7 segmentos
+
+Imagenes/ARQUITECTURA 2.JPG
+
 # Introducción
 
 En este paquete de trabajo los estudiantes deben familiarizarce con el  framework de trabajo de la FPGA seleccionado, a partir de la descripción dedecodificador BCD2SSeg
