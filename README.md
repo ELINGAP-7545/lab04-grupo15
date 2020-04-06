@@ -14,14 +14,13 @@ BCD2SSeg
 # Introducción
 En el presente trabajo se llevara a cabo la verificacion e implemetacion de un display de 7 segmentos el cual permitira la visulizacion de numeros hexadecimales. Inicialmente se comprobara el correcto funcionamiento con un solo display 7 segmentos, y como siguiente paso se implemetaran 3 displays mas para completar un total de 4, con los cuales se realizara la verificacion y correcto funcionamiento acorde a lo solicitado. Atravez de este trabajo abordaremos de forma optima el manejo adecuado de la heramienta utilizada (github), y a travez de la simulacion analizaremos el funcionamiento de un hardware sencillo con la ayuda de herramientas computacionales.
 
-#Diseño BCD-7seg
+# Diseño BCD-7seg
 
 Teniendo en cuenta los ejercicios realizados en el trascurso de la clase, suamdor, multiplicador, divisor, ya se esta en la capacidad de diseñar hardware basico de forma optima a razon de esto, en este ejercicio se propone realizar el diseño, sintentización e implementación del Display de 7 sergmentos, el cual permita visualizar números  en representación hexadecimal (0x0 a 0xF).  En el siguiente gráfico, se observa cual es el funcionamiento deseado del display:   
 
 
 ![gif_display](https://github.com/ELINGAP-7545/lab04-grupo15/blob/c874e64b35273e6b88f51a7db88721c01a7b3d35/Imagenes/seven-segment-display.gif)
 
-Imagen tomada de [User:Guam + Various](https://commons.wikimedia.org/wiki/File:Seven_segment_display-animated.gif)
 
 A continuación se presentan los pasos recomendados para el ejercicio:
 
@@ -29,23 +28,20 @@ A continuación se presentan los pasos recomendados para el ejercicio:
 
 ![bcd_black](https://github.com/Fabeltranm/SPARTAN6-ATMEGA-MAX5864/blob/master/lab/lab03-BCD2SSeg/doc/BCD2SSeg.jpg)
 
-Si observa la caja negra/ funcional  ademas  de la salidad de 7 segmentos contiene  una salida `An`. esta salida es para conectar eventualmente el ánodo del display y  poder hacer visualización dinámica, cuando se tiene mas de un display conectado.
+Si se observa la caja negra/ funcional  ademas  de la salidad de 7 segmentos contiene  una salida `An`. esta salida es para conectar eventualmente el ánodo del display y  poder hacer visualización dinámica, cuando se tiene mas de un display conectado.
 
 
 **Definir la descripción Funcional**
 
-Para ello recuerde  que puede hacer uso, bien sea, de las tablas de verdad o de la descripción algorítmica del BCD a  siete segmentos. Recuerde que cada Segmento es una salida  del diseño. Ejemplo, si desea  visualizar el número **1**, la salida seria  de `Sseg es 0110000`. observe la gráfica a continuación, para generar las salidas acorde al número de entrada.
+Para ello se debe recordar que se puede hacer uso, bien sea, de las tablas de verdad o de la descripción algorítmica del BCD a  siete segmentos. Recuerdar que cada Segmento es una salida  del diseño. Ejemplo, si desea  visualizar el número **1**, la salida seria  de `Sseg es 0110000`. observar la gráfica a continuación, para generar las salidas acorde al número de entrada.
 
 ![sseg](https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/7_segment_display_labeled.svg/1024px-7_segment_display_labeled.svg.png)
 
 
-* Definir en  HDL el comportamiento del sistema ** :  Use Verilog para hacer la descripción funcional
-**simulación de Sistema** :  Use el Testbench para este fin.
-
-
 ## Ejercicio - Visualización 1 Display
+A continucacion se puede obervar la simulacion realizada para la utilizacion de un display 7 segmentos se puede visualizar la simulacion en numeros binarios de los numeros desde el 0 hasta el 9 en la parte superior, y la parte inferior la representacion de la poscion que se toma en para su visualizacion en el display 
 
-! [ Imagen1 ] ( https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/Imagenes/Captura123.JPG  )
+![Imagen1](https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/Imagenes/Captura123.JPG)
 
 # Ejercicio - Visualización Dinámica 4 Display
 
