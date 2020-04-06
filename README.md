@@ -14,7 +14,7 @@ Laboratorio #4
 
 Implemetacion BCD en display 7 segmentos
 
-Imagenes/ARQUITECTURA 2.JPG
+(Imagenes/ARQUITECTURA 2.JPG)
 
 # Introducción
 
