@@ -33,7 +33,7 @@ Si se observa la caja negra/ funcional  además  de la salida de 7 segmentos est
 
 **Definir la descripción Funcional**
 
-Para ello se debe recordar que se puede hacer uso, bien sea, de las tablas de verdad o de la descripción algorítmica del BCD a  siete segmentos. Recordar que cada segmento es una salida  del diseño. Ejemplo, si desea  visualizar el número **1**, la salida seria `Sseg es 0110000`. Observar la gráfica a continuación, para generar las salidas acorde al número de entrada.
+Para ello se debe recordar que se puede hacer uso, bien sea, de las tablas de verdad o de la descripción algorítmica del BCD a  siete segmentos. Recordar que cada segmento es una salida  del diseño. Ejemplo, si desea  visualizar el número **1**, la salida seria `Sseg es 0110000`. Observar la gráfica a continuación para generar las salidas acorde al número de entrada.
 
 ![sseg](https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/7_segment_display_labeled.svg/1024px-7_segment_display_labeled.svg.png)
 
