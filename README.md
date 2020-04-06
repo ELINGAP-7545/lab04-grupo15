@@ -43,6 +43,13 @@ A continucacion se puede obervar la simulacion realizada para la utilizacion de 
 
 ![Imagen1](https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/Imagenes/Captura123.JPG)
 
+**Ejercicio - Visualización 1 Display Decimal hasta 15**
+
+A continuacion se visualizara al igual que en el ejercicio anterior la simulacion de la representacion de display de 7 segmentos en bits pero en este caso lo representamos desde el numero cero hasta el 15 en forma decimal
+
+
+
+
 # Ejercicio - Visualización Dinámica 4 Display
 
 
