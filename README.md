@@ -19,7 +19,7 @@ En el presente trabajo se llevara a cabo la verificacion e implemetacion de un d
 Teniendo en cuenta los ejercicios realizados en el trascurso de la clase, suamdor, multiplicador, divisor, ya se esta en la capacidad de diseñar hardware basico de forma optima a razon de esto, en este ejercicio se propone realizar el diseño, sintentización e implementación del Display de 7 sergmentos, el cual permita visualizar números  en representación hexadecimal (0x0 a 0xF).  En el siguiente gráfico, se observa cual es el funcionamiento deseado del display:   
 
 
-![gif display](https://upload.wikimedia.org/wikipedia/commons/2/2b/Seven_segment_display-animated.gif)
+![gif_display](https://github.com/ELINGAP-7545/lab04-grupo15/blob/c874e64b35273e6b88f51a7db88721c01a7b3d35/Imagenes/seven-segment-display.gif)
 
 Imagen tomada de [User:Guam + Various](https://commons.wikimedia.org/wiki/File:Seven_segment_display-animated.gif)
 
@@ -45,8 +45,7 @@ Para ello recuerde  que puede hacer uso, bien sea, de las tablas de verdad o de 
 
 ## Ejercicio - Visualización 1 Display
 
-![Display7seg1]
-(https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/Imagenes/Captura123.JPG)
+! [ Imagen1 ] ( https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/Imagenes/Captura123.JPG  )
 
 # Ejercicio - Visualización Dinámica 4 Display
 
