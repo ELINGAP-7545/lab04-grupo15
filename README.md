@@ -2,11 +2,11 @@
 
 # INTEGRANTES:
 
-Arley Stiven Rodriguez 60335;
+**Arley Stiven Rodriguez 60335;**
 
-Cesar Eduardo Martinez; 
+**Cesar Eduardo Martinez;** 
 
-Juan Arevalo;  
+**Juan Arevalo;**  
 
 # lab04
 BCD2SSeg
