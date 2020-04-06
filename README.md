@@ -6,17 +6,17 @@
 
 **Cesar Eduardo Martinez 63810;** 
 
-**Juan Arevalo;**  
+**Juan Camilo Arévalo Garzón 63572;**  
 
 # lab04
 BCD2SSeg
 
 # Introducción
-En el presente trabajo se llevara a cabo la verificacion e implemetacion de un display de 7 segmentos el cual permitira la visulizacion de numeros hexadecimales. Inicialmente se comprobara el correcto funcionamiento con un solo display 7 segmentos, y como siguiente paso se implemetaran 3 displays mas para completar un total de 4, con los cuales se realizara la verificacion y correcto funcionamiento acorde a lo solicitado. Atravez de este trabajo abordaremos de forma optima el manejo adecuado de la heramienta utilizada (github), y a travez de la simulacion analizaremos el funcionamiento de un hardware sencillo con la ayuda de herramientas computacionales.
+En el presente trabajo se llevara a cabo la verificación e implemetación de un display de 7 segmentos el cual permitira la visualización de números hexadecimales. Inicialmente se comprobara el correcto funcionamiento con un solo display 7 segmentos, como siguiente paso se implemetaran 3 displays adicionales para completar un total de 4 con los cuales se realizara la verificación y correcto funcionamiento acorde a lo solicitado. A través de este trabajo abordaremos de forma optima el manejo adecuado de la heramienta utilizada (github) de igual forma en la simulacion analizaremos el funcionamiento de un hardware sencillo con la ayuda de herramientas computacionales como lo son Quartus.
 
 # Diseño BCD-7seg
 
-Teniendo en cuenta los ejercicios realizados en el trascurso de la clase, suamdor, multiplicador, divisor, ya se esta en la capacidad de diseñar hardware basico de forma optima a razon de esto, en este ejercicio se propone realizar el diseño, sintentización e implementación del Display de 7 sergmentos, el cual permita visualizar números  en representación hexadecimal (0x0 a 0xF).  En el siguiente gráfico, se observa cual es el funcionamiento deseado del display:   
+Teniendo en cuenta los ejercicios realizados en el trasncurso de las clases: sumador, multiplicador y divisor ya se esta en la capacidad de diseñar hardware básico de forma optima. Para este ejercicio se propone realizar el diseño, sintentización e implementación del Display de 7 segmentos, el cual permite visualizar números en representación hexadecimal (0x0 a 0xF).  En el siguiente gráfico, se observa cual es el funcionamiento deseado del display:   
 
 
 ![gif_display](https://github.com/ELINGAP-7545/lab04-grupo15/blob/c874e64b35273e6b88f51a7db88721c01a7b3d35/Imagenes/seven-segment-display.gif)
@@ -28,7 +28,7 @@ A continuación se presentan los pasos recomendados para el ejercicio:
 
 ![bcd_black](https://github.com/Fabeltranm/SPARTAN6-ATMEGA-MAX5864/blob/master/lab/lab03-BCD2SSeg/doc/BCD2SSeg.jpg)
 
-Si se observa la caja negra/ funcional  ademas  de la salidad de 7 segmentos contiene  una salida `An`. esta salida es para conectar eventualmente el ánodo del display y  poder hacer visualización dinámica, cuando se tiene mas de un display conectado.
+Si se observa la caja negra/ funcional  ademas  de la salida de 7 segmentos contiene  una salida `An`. esta salida es para conectar eventualmente el ánodo del display y  poder hacer visualización dinámica, cuando se tiene mas de un display conectado.
 
 
 **Definir la descripción Funcional**
