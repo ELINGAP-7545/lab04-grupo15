@@ -13,7 +13,7 @@ Juan Arevalo
 Laboratorio #4 
 
 Implemetacion BCD en display 7 segmentos
-
+![1display]
 (https://github.com/ELINGAP-7545/lab04-grupo15/blob/0dee727b5ca87bea1c616da868e2d760d15aeeb8/Imagenes/ARQUITECTURA%202.JPG)
 
 # Introducción
