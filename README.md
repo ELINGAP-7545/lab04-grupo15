@@ -14,8 +14,7 @@ Laboratorio #4
 
 Implemetacion BCD en display 7 segmentos
 
-![Imagen ARQUITECTURA 2]
-(https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/Imagenes/Captura123.JPG)
+![Imagen ARQUITECTURA 2]_(https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/Imagenes/Captura123.JPG)
 
 # Introducción
 
