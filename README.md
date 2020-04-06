@@ -1,36 +1,22 @@
-﻿# lab04
+﻿#Implemetacion BCD en display 7 segmentos
+
+# INTEGRANTES:
+
+Arley Stiven Rodriguez 60335;
+
+Cesar Eduardo Martinez; 
+
+Juan Arevalo;  
+
+# lab04
 BCD2SSeg
 
-INTEGRANTES:
-
-Arley Stiven Rodriguez 
-
-Cesar Eduardo Martinez 
-
-Juan Arevalo  
-
-
-Laboratorio #4 
-
-Implemetacion BCD en display 7 segmentos
-
-![Imagen1]( https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/Imagenes/Captura123.JPG )
-
 # Introducción
+En el presente trabajo se llevara a cabo la verificacion e implemetacion de un display de 7 segmentos el cual permitira la visulizacion de numeros hexadecimales. Inicialmente se comprobara el correcto funcionamiento con un solo display 7 segmentos, y como siguiente paso se implemetaran 3 displays mas para completar un total de 4, con los cuales se realizara la verificacion y correcto funcionamiento acorde a lo solicitado. Atravez de este trabajo abordaremos de forma optima el manejo adecuado de la heramienta utilizada (github), y a travez de la simulacion analizaremos el funcionamiento de un hardware sencillo con la ayuda de herramientas computacionales.
 
-En este paquete de trabajo los estudiantes deben familiarizarce con el  framework de trabajo de la FPGA seleccionado, a partir de la descripción dedecodificador BCD2SSeg
+#Diseño BCD-7seg
 
-Para este paquete de trabajo, deben estar inscrito en un grupo y clonar la información del siguiente link [WP04](https://classroom.github.com/g/zCBwHHKX). Una vez aceptado el repositorio debe descargarlo en su computador, para ello debe clonar el mismo. Si no sabe cómo hacerlo revise la metodología de trabajo, donde se explica el proceso
-
-Las documentación deben estar diligencia en el archivo README.md del repositorio clonado.
-
-Una vez clone el repositorio, realice lo siguiente:
-
-## Diseño BCD-7seg
-
-En este punto, ya se estar en la capacidad de describir e implementar Hardware sencillo, con la ayuda de herramientas computaciones.  y como se vio en los dos ejemplos anteriores, la suma se visualiza en leds,  algo que es difícil para  validad visualmente la respuesta. Por lo tanto, es aconsejable tener una visualización mas acorde a las necesidades, como por ejemplo  visualizar los resultados en el [ Display 7 Segmentos](https://en.wikipedia.org/wiki/Seven-segment_display) 
-
-En este Ejercicio se propone que realicen el diseño, sintentización e implementación del Display de 7 sergmentos, el cual permita visualizar números  en representación hexadecimal (0x0 a 0xF).  En el siguiente gráfico, se observa cual es el funcionamiento deseado del display:
+Teniendo en cuenta los ejercicios realizados en el trascurso de la clase, suamdor, multiplicador, divisor, ya se esta en la capacidad de diseñar hardware basico de forma optima a razon de esto, en este ejercicio se propone realizar el diseño, sintentización e implementación del Display de 7 sergmentos, el cual permita visualizar números  en representación hexadecimal (0x0 a 0xF).  En el siguiente gráfico, se observa cual es el funcionamiento deseado del display:   
 
 
 ![gif display](https://upload.wikimedia.org/wikipedia/commons/2/2b/Seven_segment_display-animated.gif)
@@ -56,6 +42,11 @@ Para ello recuerde  que puede hacer uso, bien sea, de las tablas de verdad o de 
 * Definir en  HDL el comportamiento del sistema ** :  Use Verilog para hacer la descripción funcional
 **simulación de Sistema** :  Use el Testbench para este fin.
 
+
+## Ejercicio - Visualización 1 Display
+
+![Display7seg1]
+(https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/Imagenes/Captura123.JPG)
 
 # Ejercicio - Visualización Dinámica 4 Display
 
