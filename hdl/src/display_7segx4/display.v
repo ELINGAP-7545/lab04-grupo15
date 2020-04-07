@@ -1,4 +1,5 @@
-`timescale 1ns / 1ps
+`timescale 1ns / 1ps // escala de tiempo [unidad de tiempo] / [precisión de tiempo]
+
 module display(
     input [15:0] num,
     input clk,
@@ -10,8 +11,8 @@ module display(
 
 
 
-reg [3:0]bcd=0;
-//wire [15:0] num=16'h4321;
+reg [3:0]bcd=0;  // Restriccion de maximo 4 posiciones de numero 
+//wire [15:0]num=16'h4321;
  
 BCDtoSSeg bcdtosseg(.BCD(bcd), .SSeg(sseg));
 
@@ -23,20 +24,20 @@ wire enable;
 assign enable = cfreq[16];
 assign led =enable;
 always @(posedge clk) begin
-  if(rst==1) begin
+  if(rst==1) begin 
 		cfreq <= 0;
 	end else begin
-		cfreq <=cfreq+1;
+		cfreq <=cfreq+1; 
 	end
 end
 
 reg [1:0] count =0;
 always @(posedge enable) begin
 		if(rst==1) begin
-			count<= 0;
+			count<= 0; // Mientras rst sea contador permanece en cero
 			an<=4'b1111; 
 		end else begin 
-			count<= count+1;
+			count<= count+1; // Si rst es deferente de 1 contador aumenta hasta ocupar todas las posiciones de anodo
 			an<=4'b1101; 
 			case (count) 
 				2'h0: begin bcd <= num[3:0];   an<=4'b1110; end 
