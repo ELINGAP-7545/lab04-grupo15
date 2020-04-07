@@ -4,19 +4,19 @@
 
 **Arley Stiven Rodriguez 60335;**
 
-**Cesar Eduardo Martinez;** 
+**Cesar Eduardo Martinez 63810;** 
 
-**Juan Arevalo;**  
+**Juan Camilo Arévalo Garzón 63572;**  
 
 # lab04
 BCD2SSeg
 
 # Introducción
-En el presente trabajo se llevara a cabo la verificacion e implemetacion de un display de 7 segmentos el cual permitira la visulizacion de numeros hexadecimales. Inicialmente se comprobara el correcto funcionamiento con un solo display 7 segmentos, y como siguiente paso se implemetaran 3 displays mas para completar un total de 4, con los cuales se realizara la verificacion y correcto funcionamiento acorde a lo solicitado. Atravez de este trabajo abordaremos de forma optima el manejo adecuado de la heramienta utilizada (github), y a travez de la simulacion analizaremos el funcionamiento de un hardware sencillo con la ayuda de herramientas computacionales.
+En el presente trabajo se llevara a cabo la verificación e implemetación de un display de 7 segmentos el cual permitira la visualización de números hexadecimales. Inicialmente se comprobara el correcto funcionamiento con un solo display 7 segmentos, como siguiente paso se implemetaran 3 displays adicionales para completar un total de 4 con los cuales se realizara la verificación y correcto funcionamiento acorde a lo solicitado. A través de este trabajo abordaremos de forma optima el manejo adecuado de la heramienta utilizada (github) de igual forma en la simulacion analizaremos el funcionamiento de un hardware sencillo con la ayuda de herramientas computacionales como lo son Quartus.
 
 # Diseño BCD-7seg
 
-Teniendo en cuenta los ejercicios realizados en el trascurso de la clase, suamdor, multiplicador, divisor, ya se esta en la capacidad de diseñar hardware basico de forma optima a razon de esto, en este ejercicio se propone realizar el diseño, sintentización e implementación del Display de 7 sergmentos, el cual permita visualizar números  en representación hexadecimal (0x0 a 0xF).  En el siguiente gráfico, se observa cual es el funcionamiento deseado del display:   
+Teniendo en cuenta los ejercicios realizados en el transcurso de las clases: sumador, multiplicador y divisor ya se esta en la capacidad de diseñar hardware básico de forma optima. Para este ejercicio se propone realizar el diseño, sintentización e implementación del Display de 7 segmentos, el cual permite visualizar números en representación hexadecimal (0x0 a 0xF).  En el siguiente gráfico, se observa cual es el funcionamiento deseado del display:   
 
 
 ![gif_display](https://github.com/ELINGAP-7545/lab04-grupo15/blob/c874e64b35273e6b88f51a7db88721c01a7b3d35/Imagenes/seven-segment-display.gif)
@@ -28,12 +28,12 @@ A continuación se presentan los pasos recomendados para el ejercicio:
 
 ![bcd_black](https://github.com/Fabeltranm/SPARTAN6-ATMEGA-MAX5864/blob/master/lab/lab03-BCD2SSeg/doc/BCD2SSeg.jpg)
 
-Si se observa la caja negra/ funcional  ademas  de la salidad de 7 segmentos contiene  una salida `An`. esta salida es para conectar eventualmente el ánodo del display y  poder hacer visualización dinámica, cuando se tiene mas de un display conectado.
+Si se observa la caja negra/ funcional  además  de la salida de 7 segmentos este contiene  una salida `An`, esta salida es para conectar eventualmente el ánodo del display y poder hacer visualización dinámica cuando se tiene más de un display conectado.
 
 
 **Definir la descripción Funcional**
 
-Para ello se debe recordar que se puede hacer uso, bien sea, de las tablas de verdad o de la descripción algorítmica del BCD a  siete segmentos. Recuerdar que cada Segmento es una salida  del diseño. Ejemplo, si desea  visualizar el número **1**, la salida seria  de `Sseg es 0110000`. observar la gráfica a continuación, para generar las salidas acorde al número de entrada.
+Para ello se debe recordar que se puede hacer uso, bien sea, de las tablas de verdad o de la descripción algorítmica del BCD a  siete segmentos. Recordar que cada segmento es una salida  del diseño. Ejemplo, si desea  visualizar el número **1**, la salida seria `Sseg es 0110000`. Observar la gráfica a continuación para generar las salidas acorde al número de entrada.
 
 ![sseg](https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/7_segment_display_labeled.svg/1024px-7_segment_display_labeled.svg.png)
 
@@ -47,7 +47,7 @@ A continucacion se puede obervar la simulacion realizada para la utilizacion de 
 
 **Ejercicio - Visualización 1 Display Decimal hasta 15**
 
-A continuacion se visualizara al igual que en el ejercicio anterior la simulacion de la representacion de display de 7 segmentos en bits pero en este caso lo representamos desde el numero cero hasta el 15 en forma decimal
+A continuacion se visualizara al igual que en el ejercicio anterior la simulacion de la representacion de display de 7 segmentos en bits pero en este caso lo representamos desde el número 0 hasta el 15 en forma decimal
 
 
 ![Codigo1](https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/Imagenes/Codigo1.JPG)

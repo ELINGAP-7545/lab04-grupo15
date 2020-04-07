@@ -1,0 +1,33 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/QUARTUS/GitHub/lab04-grupo15/hdl/simulation/modelsim
+vBCDtoSSeg
+!s110 1586231727
+!i10b 1
+!s100 T2CJQTbG8bV:jjZdMOViL0
+I@g1SCbYLJ5HbLNO`2aP><1
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1585968096
+8D:/QUARTUS/GitHub/lab04-grupo15/hdl/src/BCDtoSSeg.v
+FD:/QUARTUS/GitHub/lab04-grupo15/hdl/src/BCDtoSSeg.v
+L0 1
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1586231727.000000
+!s107 D:/QUARTUS/GitHub/lab04-grupo15/hdl/src/BCDtoSSeg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS/GitHub/lab04-grupo15/hdl/src|D:/QUARTUS/GitHub/lab04-grupo15/hdl/src/BCDtoSSeg.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/QUARTUS/GitHub/lab04-grupo15/hdl/src
+tCvgOpt 0
+n@b@c@dto@s@seg
