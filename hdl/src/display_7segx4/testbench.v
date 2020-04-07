@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 1ns / 1ps   // escala de tiempo [unidad de tiempo] / [precisión de tiempo]
 
 ////////////////////////////////////////////////////////////////////////////////
 // Company: 
@@ -34,8 +34,8 @@ module testbench;
 	wire [3:0] an;
 
 	// Instantiate the Unit Under Test (UUT)
-	display uut (
-	//	.num(num), 
+	display uut (  	// en este bloque llama al modulo de display y ejecuta
+		.num(num), 
 		.clk(clk2), 
 		.sseg(sseg), 
 		.an(an), 
@@ -44,9 +44,9 @@ module testbench;
 
 	initial begin
 		// Initialize Inputs
-		clk2= 0;
-		rst = 1;
-		#10 rst =0;
+		clk2= 0; // apenas comienza la simulacion clk va a arrancar en cero
+		rst = 1;	// apenas comienza la simulacion rst (reset) va a arrancar en uno
+		#10 rst =0; //depues de un espacio de tiempo rst pasa a cero
 		
 		num = 16'h4321;
         
@@ -57,4 +57,3 @@ module testbench;
 	always #1 clk2 = ~clk2;
 	
 endmodule
-
