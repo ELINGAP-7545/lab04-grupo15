@@ -94,7 +94,23 @@ Se evidencia que se deben construir cuatro módulos  básicos, de los cuales uno
 
 # BCD 4 Display 7 segmentos
 
+**Codigo BCD**
+
+![BCDtoSSeg](https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/hdl/src/display_7segx4/BCDtoSSeg.v)
+
+**Simulacion en 4 display 7 segmentos **
+
 ![Display7seg](https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/Imagenes/Display7seg.JPG)
 
 
+
+**Codigo display**
+
+![display](https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/hdl/src/display_7segx4/display.v)
+
+
 ![Codigo_display](https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/Imagenes/Codigo_Display.JPG)
+
+**Testbench 4 display**
+
+![testbench](https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/hdl/src/display_7segx4/testbench.v)
