@@ -96,18 +96,7 @@ Se evidencia que se deben construir cuatro módulos  básicos, de los cuales uno
 
 **Codigo BCD**
 
-![BCDtoSSeg](https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/hdl/src/display_7segx4/BCDtoSSeg.v)
 
-**Simulacion en 4 display 7 segmentos **
-
-![Display7seg](https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/Imagenes/Display7seg.JPG)
-
-
-
-**Codigo display**
-
-`` `verilog
-if (BCDtoSSeg) {
   módulo  BCDtoSSeg (BCD, SSeg, an);
 
   entrada [ 3 : 0 ] BCD;
@@ -141,12 +130,130 @@ siempre @ ( * ) comienza
 fin
 
 endmodule
-}
-`` `
+
+
+
+**Simulacion en 4 display 7 segmentos **
+
+![Display7seg](https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/Imagenes/Display7seg.JPG)
+
+
+
+**Codigo display**
+
+`timescale 1ns / 1ps // escala de tiempo [unidad de tiempo] / [precisión de tiempo]
+
+module display(
+    input [15:0] num,
+    input clk,
+    output [0:6] sseg,
+    output reg [3:0] an,
+	 input rst,
+	 output led
+    );
+
+
+
+reg [3:0]bcd=0;  // Restriccion de maximo 4 posiciones de numero 
+//wire [15:0]num=16'h4321;
+ 
+BCDtoSSeg bcdtosseg(.BCD(bcd), .SSeg(sseg));
+
+reg [26:0] cfreq=0;
+wire enable;
+
+// Divisor de frecuecia
+
+assign enable = cfreq[16];
+assign led =enable;
+always @(posedge clk) begin
+  if(rst==1) begin 
+		cfreq <= 0;
+	end else begin
+		cfreq <=cfreq+1; 
+	end
+end
+
+reg [1:0] count =0;
+always @(posedge enable) begin
+		if(rst==1) begin
+			count<= 0; // Mientras rst sea contador permanece en cero
+			an<=4'b1111; 
+		end else begin 
+			count<= count+1; // Si rst es deferente de 1 contador aumenta hasta ocupar todas las posiciones de anodo
+			an<=4'b1101; 
+			case (count) 
+				2'h0: begin bcd <= num[3:0];   an<=4'b1110; end 
+				2'h1: begin bcd <= num[7:4];   an<=4'b1101; end 
+				2'h2: begin bcd <= num[11:8];  an<=4'b1011; end 
+				2'h3: begin bcd <= num[15:12]; an<=4'b0111; end 
+			endcase
+		end
+end
+
+endmodule
 
 
 ![Codigo_display](https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/Imagenes/Codigo_Display.JPG)
 
 **Testbench 4 display**
 
-![testbench](https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/hdl/src/display_7segx4/testbench.v)
+`timescale 1ns / 1ps   // escala de tiempo [unidad de tiempo] / [precisión de tiempo]
+
+////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer:
+//
+// Create Date:   22:17:21 09/05/2019
+// Design Name:   display
+// Module Name:   C:/Users/UECCI/Desktop/ejer01/display_7segx4/testbench.v
+// Project Name:  display_7segx4
+// Target Device:  
+// Tool versions:  
+// Description: 
+//
+// Verilog Test Fixture created by ISE for module: display
+//
+// Dependencies:
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+////////////////////////////////////////////////////////////////////////////////
+
+module testbench;
+
+	// Inputs
+	reg [15:0] num;
+	reg clk2;
+	reg rst;
+
+	// Outputs
+	wire [0:6] sseg;
+	wire [3:0] an;
+
+	// Instantiate the Unit Under Test (UUT)
+	display uut (  	// en este bloque llama al modulo de display y ejecuta
+		.num(num), 
+		.clk(clk2), 
+		.sseg(sseg), 
+		.an(an), 
+		.rst(rst)
+	);
+
+	initial begin
+		// Initialize Inputs
+		clk2= 0; // apenas comienza la simulacion clk va a arrancar en cero
+		rst = 1;	// apenas comienza la simulacion rst (reset) va a arrancar en uno
+		#10 rst =0; //depues de un espacio de tiempo rst pasa a cero
+		
+		num = 16'h4321;
+        
+
+	end
+      
+
+	always #1 clk2 = ~clk2;
+	
+endmodule
