@@ -109,7 +109,7 @@ Se evidencia que se deben construir cuatro módulos  básicos, de los cuales uno
 ![display](https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/hdl/src/display_7segx4/display.v)
 
 
-![Codigo_display](https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/Imagenes/Codigo_Display.JPG)
+{https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/Imagenes/Codigo_Display.JPG}
 
 **Testbench 4 display**
 
