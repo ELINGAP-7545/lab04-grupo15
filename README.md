@@ -133,7 +133,7 @@ endmodule
 
 
 
-*Simulacion en 4 display 7 segmentos*
+**Simulacion en 4 display 7 segmentos**
 
 ![Display7seg](https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/Imagenes/Display7seg.JPG)
 
