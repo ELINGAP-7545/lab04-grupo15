@@ -30,9 +30,9 @@ module BCDtoSSeg_TB;
 
 	end
 
-   initial begin: TEST_CASE
+  /* initial begin: TEST_CASE
      $dumpfile("BCDtoSSeg_TB.vcd");
      #(200) $finish;
-   end
+   end*/
 
 endmodule
