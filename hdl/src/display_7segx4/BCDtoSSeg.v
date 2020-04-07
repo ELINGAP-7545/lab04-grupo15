@@ -1,9 +1,14 @@
-module BCDtoSSeg (BCD, SSeg);
+module BCDtoSSeg (BCD, SSeg, an);
 
   input [3:0] BCD;
-  output reg [6:0] SSeg;
+  output reg [0:6] SSeg;
+  output [3:0] an;
+
+assign an=4'b1110;
+
+
 always @ ( * ) begin
-  case (BCD)
+  case (BCD)	
    4'b0000: SSeg = 7'b0000001; // "0"  
 	4'b0001: SSeg = 7'b1001111; // "1" 
 	4'b0010: SSeg = 7'b0010010; // "2" 
@@ -14,12 +19,12 @@ always @ ( * ) begin
 	4'b0111: SSeg = 7'b0001111; // "7" 
 	4'b1000: SSeg = 7'b0000000; // "8"  
 	4'b1001: SSeg = 7'b0000100; // "9" 
-   4'ha: SSeg = 7'b0001000;  
-   4'hb: SSeg = 7'b1100000;
-   4'hc: SSeg = 7'b0110001;
-   4'hd: SSeg = 7'b1000010;
-   4'he: SSeg = 7'b0110000;
-   4'hf: SSeg = 7'b0111000;
+   //4'ha: SSeg = 7'b0001000;  // Se quitan los numeros exadecimal ya que en este caso no es necesaria su visualizacion
+   //4'hb: SSeg = 7'b1100000;
+   //4'hc: SSeg = 7'b0110001;
+   //4'hd: SSeg = 7'b1000010;
+   //4'he: SSeg = 7'b0110000;
+   //4'hf: SSeg = 7'b0111000;
     default:
     SSeg = 0;
   endcase
