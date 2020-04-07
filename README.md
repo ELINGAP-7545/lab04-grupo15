@@ -106,7 +106,11 @@ Se evidencia que se deben construir cuatro módulos  básicos, de los cuales uno
 
 **Codigo display**
 
-{https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/hdl/src/display_7segx4/display.v}
+`` `verilog
+if (BCDtoSSeg) {
+  volver verdadero
+}
+`` `
 
 
 ![Codigo_display](https://github.com/ELINGAP-7545/lab04-grupo15/blob/master/Imagenes/Codigo_Display.JPG)
