@@ -12,12 +12,12 @@
 # 
 # vlog -vlog01compat -work work +incdir+D:/QUARTUS/GitHub/lab04-grupo15/hdl/src {D:/QUARTUS/GitHub/lab04-grupo15/hdl/src/BCDtoSSeg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:43:21 on Apr 06,2020
+# Start time: 22:55:27 on Apr 06,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS/GitHub/lab04-grupo15/hdl/src" D:/QUARTUS/GitHub/lab04-grupo15/hdl/src/BCDtoSSeg.v 
 # -- Compiling module BCDtoSSeg
 # 
 # Top level modules:
 # 	BCDtoSSeg
-# End time: 22:43:21 on Apr 06,2020, Elapsed time: 0:00:00
+# End time: 22:55:27 on Apr 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
